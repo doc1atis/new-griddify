@@ -13,7 +13,7 @@ body{
 }
 
 #app{
-    display: flex;
+    display: grid;
     flex-direction: column;
     background-color: #30998c;
     padding-top: 0px;
