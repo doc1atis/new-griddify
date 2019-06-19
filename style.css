@@ -1,1 +1,5 @@
 
+.main-container{
+    background-color: blueviolet;
+    display: grid;
+}
