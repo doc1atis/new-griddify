@@ -1,5 +1,84 @@
 
-.main-container{
-    background-color: blueviolet;
-    display: grid;
+*{
+    box-sizing: border-box;
 }
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    display: grid;
+    background-color: blueviolet;
+    grid-template-areas: "header"
+                         "belly"
+                         "footer";
+
+    row-gap: 0px;
+
+    width: 100vw;
+    height: 100vh;
+
+    grid-template-rows: 10% 85% 5%;
+
+
+}
+
+.header{
+    background-color: red;
+    grid-area: header;
+}
+
+.belly{
+    display: grid;
+    grid-template-areas: "navigation text ads";
+    background-color: aqua;
+    grid-area: belly;
+    grid-template-columns: 1fr 4fr max-content;
+}
+
+.navigation{
+    grid-area: navigation;
+    display: grid;
+    grid-template-areas: "page1"
+                         "page2"
+                         "page3"
+                         "page4";
+    background-color: darkgreen;
+}
+
+.text{
+    grid-area: text;
+    background-color: blue;
+}
+
+.ads{
+    display:grid;
+    grid-template-areas: "ad1"
+                         "ad2"
+                         "ad3";
+    grid-area: ads;
+    background-color: #D94948;
+    row-gap: 0px;
+
+    grid-template-rows: max-content max-content max-content;
+}
+
+.adv-1{
+    background-color: #53A4DB;
+}
+
+.adv-2{
+    background-color: #D94948;
+}
+
+.adv-3{
+    background-color: #80DEEA;
+}
+
+.footer{
+    background-color: coral;
+    grid-area: footer;
+}
+
