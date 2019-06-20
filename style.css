@@ -63,14 +63,17 @@ body{
     row-gap: 0px;
 
     grid-template-rows: max-content max-content max-content;
+
 }
 
 .adv-1{
     background-color: #53A4DB;
+    text-align: center;
 }
 
 .adv-2{
     background-color: #D94948;
+    text-align: center;
 }
 
 .adv-3{
